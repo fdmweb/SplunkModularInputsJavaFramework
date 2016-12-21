@@ -1,5 +1,8 @@
 # FDM / RUN
 
+*Requires JDK + Ant*
+
+Run `build/build.sh`
 Copy the file `temp_build/bin/lib/amqpmodinput.jar` to `C:\Program Files\Splunk\etc\apps\amqp_ta\bin\lib` and set the class in the AMQP plugin to: `com.splunk.modinput.amqp.RawMessageHandler`
 
 ---
