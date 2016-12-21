@@ -10,4 +10,6 @@ public interface Transport {
 	
 	public void transport(String message,String time,String host);
 
+	public void transportRaw(String message);
+
 }

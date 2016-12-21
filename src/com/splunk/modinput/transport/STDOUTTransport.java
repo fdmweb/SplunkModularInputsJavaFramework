@@ -80,7 +80,10 @@ public class STDOUTTransport implements Transport {
 	@Override
 	public void transport(String message, String time,String host) {
 		transport(message);
-		
 	}
 
+	@Override
+	public void transportRaw(String message) {
+		transport(message);
+	}
 }

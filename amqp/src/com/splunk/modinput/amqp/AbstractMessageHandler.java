@@ -29,6 +29,11 @@ public abstract class AbstractMessageHandler {
 		if(transport != null)
 		  this.transport.transport(message,time,host);
 	}
+
+	public void transportMessageRaw(String message) {
+		if (transport != null)
+			this.transport.transportRaw(message);
+	}
 	
 	public abstract void handleMessage(byte[] messageContents,
 			Envelope envelope, AMQP.BasicProperties messageProperties,

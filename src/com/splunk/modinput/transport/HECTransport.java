@@ -230,6 +230,16 @@ public class HECTransport implements Transport {
 		createAndSendHECEvent(message, "", "");
 	}
 
+	@Override
+	public void transportRaw(String message) {
+		try {
+			hecPost(message);
+		} catch (Exception e) {
+			logger.error("Error writing received data via HEC: " + ModularInput.getStackTrace(e));
+		}
+
+	}
+
 	private boolean flushBuffer() {
 
 		return (currentBatchSizeBytes >= config.getMaxBatchSizeBytes())
