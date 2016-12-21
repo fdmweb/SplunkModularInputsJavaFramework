@@ -2,6 +2,11 @@
 
 Copy the file `temp_build/bin/lib/amqpmodinput.jar` to `C:\Program Files\Splunk\etc\apps\amqp_ta\bin\lib` and set the class in the AMQP plugin to: `com.splunk.modinput.amqp.RawMessageHandler`
 
+---
+---
+---
+
+
 ## Splunk Java Modular Inputs v1.0
 
 # IMPORTANT NOTE :
