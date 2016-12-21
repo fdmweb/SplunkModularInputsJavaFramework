@@ -16,10 +16,10 @@
             <include name="**/*.jar" />
         </fileset>
         
-        <fileset dir="3rdParty" >
+        <!--<fileset dir="3rdParty" >
 
             <include name="**/*.jar" />
-        </fileset>
+        </fileset>-->
     </path>
 
     <target name="init" >
@@ -346,7 +346,7 @@
                 prefix="${id}" />
         </tar>
 
-        <delete dir="${temp_build}" />
+        <!--<delete dir="${temp_build}" />-->
     </target>
 
 <target
